@@ -1,0 +1,61 @@
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+  }
+  
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #3490dc;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2779bd;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    border: 1px solid #3490dc;
+    color: #3490dc;
+  }
+  
+  .btn-outline:hover {
+    background-color: #3490dc;
+    color: white;
+  }
+  
+  .btn-danger {
+    background-color: #e3342f;
+    color: white;
+  }
+  
+  .btn-danger:hover {
+    background-color: #cc1f1a;
+  }
+  
+  

@@ -1,0 +1,42 @@
+.recipe-summary {
+  background-color: #e6ffe6;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.recipe-summary h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.nutrition-score {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+.summary-ingredients {
+  list-style-type: none;
+  padding: 0;
+}
+
+.summary-ingredient {
+  background-color: white;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+

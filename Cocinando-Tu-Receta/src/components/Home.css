@@ -1,0 +1,15 @@
+.home {
+  text-align: center;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+

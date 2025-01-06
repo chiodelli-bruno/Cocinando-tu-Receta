@@ -1,0 +1,45 @@
+.ingredient-list {
+  flex: 1;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.ingredient-list h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.ingredient-list ul {
+  list-style-type: none;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.ingredient-list li {
+  background-color: white;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.ingredient-list li:hover {
+  background-color: var(--accent-color);
+}
+
+.ingredient-list li span {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .ingredient-list {
+    margin-bottom: 1rem;
+  }
+}
+

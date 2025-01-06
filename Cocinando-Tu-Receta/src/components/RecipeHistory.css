@@ -1,0 +1,101 @@
+.recipe-history {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-history h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #e74c3c;
+  padding-bottom: 0.5rem;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.empty-message {
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 3rem 0;
+  background-color: #ecf0f1;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-back {
+  display: block;
+  width: 200px;
+  margin: 2rem auto 0;
+  padding: 1rem;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  background-color: #e74c3c;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .recipe-history {
+    padding: 1rem;
+  }
+
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-history h2 {
+    font-size: 2rem;
+  }
+
+  .btn-back {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .recipe-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.recipe-grid > * {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.recipe-grid > *:nth-child(1) { animation-delay: 0.1s; }
+.recipe-grid > *:nth-child(2) { animation-delay: 0.2s; }
+.recipe-grid > *:nth-child(3) { animation-delay: 0.3s; }
+.recipe-grid > *:nth-child(4) { animation-delay: 0.4s; }
+
+
